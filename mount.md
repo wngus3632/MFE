@@ -22,7 +22,7 @@ lifecycle함수는 single spa가 등록 된 애플리케이션에서 호출하�
 
 lifecycle 함수는 몇 가지 보장된 정보와 추가 사용자 지정 정보가 포함된 객체인 props 인수로 호출됩니다.
 
-```
+``` javascript
 function bootstrap(props) {
   const {
     name, // The name of the application
@@ -173,43 +173,3 @@ millis는 최종 콘솔 경고에 대한 밀리 초 수를 나타내며 warningM
 
 1)응용 프로그램이 마운트 및 마운트 해제될 때 전환을 추가하려는 경우 부트스트랩, 마운트 및 마운트 해제 lifecycle 방법에 연결하는 것이 좋습니다. 이 single spa 전환 저장소는 앱이 마운트 및 마운트 해제될 때 전환을 추가하기 위해 이러한 lifecycle 방법에 연결하는 방법에 대한 작은 개념 증명입니다. 2)마운트 된 애플리케이션 내의 페이지 전환은 애플리케이션 자체에서 전적으로 처리할 수 ​​있습니다. 예를 들어 React 기반 프로젝트에 react-transition-group을 사용합니다.
 
-### 예제
-
-root-config: 마이크로 프런트 엔드용 공유 HTML 레이아웃
-navbar: 탐색 책임이있는 기본 Svelte 애플리케이션
-home: 로그인 한 사용자를위한 기본 React 애플리케이션
-login: 로그 아웃 한 사용자를위한 기본 React 애플리케이션
-auth: Rxjs 및 일반 JavaScript를 사용하는 유틸리티 모듈
-1)example-home.js
-
-```javascript
-export const { bootstrap, mount, unmount } = lifecycles;
-```
-
-2)example-login.js
-
-```javascript
-export const { bootstrap } = lifecycles;
-
-export const mount = [
-  lifecycles.mount,
-  () => {
-    styles.use();
-    return Promise.resolve();
-  },
-];
-
-export const unmount = [
-  lifecycles.unmount,
-  () => {
-    styles.unuse();
-    return Promise.resolve();
-  },
-];
-```
-
-3)example-navbar.js
-
-```javascript
-export const { bootstrap, mount, unmount } = svelteLifecycles;
-```
