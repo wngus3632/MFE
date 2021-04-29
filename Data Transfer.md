@@ -1,6 +1,6 @@
 # Data Transfer에 대하여
 
-정주현
+정주현, 남기훈
 
 single-spa-example-rxjs-shared-state 예제를 기반으로 분석
 
