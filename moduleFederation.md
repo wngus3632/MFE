@@ -82,7 +82,7 @@ home의 컴포넌트들을 content-element, button-element라는 태그로 layou
 6. webpack.config.js에서 ModuleFederationPlugin 중 exposes에 내보낼 컴포넌트 등록
 7. layout main.js에 등록
 
-_=> 여기까지 하면 sub 자체 실행을 하면 잘 실행 되지만, layout에 등록시 에러 발생_
+_=> 여기까지 하면 sub 자체 실행은 잘 되지만, layout에 등록시 에러 발생_
 
 8. layout의 webpack.config.js에 ModuleFederationPlugin에 리모트할 컴포넌트 주소 추가
 
