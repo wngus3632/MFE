@@ -70,7 +70,7 @@ app.component("content-element", Content);
 app.component("button-element", Button);
 ```
 
-home의 컴포넌트들을 <content-element>, <button-element>라는 태그로 layout에서 사용할 수 있도록 함.
+home의 컴포넌트들을 content-element, button-element라는 태그로 layout에서 사용할 수 있도록 함.
 
 ## 서브 컴포넌트 앱 추가 해보기
 
