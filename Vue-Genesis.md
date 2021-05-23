@@ -1,5 +1,7 @@
 # **Vue-Genesis로 Micro Frontend 구현하기**
-
+한국외국어대학교 일본어통번역학과 정주현<br>
+한국외국어대학교 컴퓨터전자시스템공학부 남기훈</br>
+</br>
 ## **Micro Frontend란?**
 
 <br>
@@ -85,12 +87,12 @@ import express from 'express';
 import { SSR, Renderer } from '@fmfe/genesis-core';
 
 /**
- * 애플리케이션을 만듬
+ * 애플리케이션을 만듦
  */
 export const app = express();
 
 /**
- * SSR 인스턴스를 만듬
+ * SSR 인스턴스를 만듦
  */
 export const ssr = new SSR();
 
@@ -397,4 +399,5 @@ export const RemoteView = {
 > Vue-Genesis 예시 https://github.com/fmfe/genesis
 
 > Genesis-remote 사용법 참고 https://anish2690.github.io/genesis-docs-en/remote/#event-communication
+
 
