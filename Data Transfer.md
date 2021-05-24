@@ -1,6 +1,7 @@
 # **Data Transfer에 대하여**
 
->한국외국어대학교 정주현, 남기훈
+>한국외국어대학교 일본어통번역학과 정주현<br>
+>한국외국어대학교 컴퓨터전자시스템공학부 남기훈
 
 single-spa-example-rxjs-shared-state 예제를 기반으로 분석, 여러 single-spa 어플리케이션과 여러 프레임워크 간에 어플리케이션 상태를 공유하는 유틸리티 모듈을 사용한다.<br>
 <br>원본 깃허브 주소 : https://github.com/filoxo/single-spa-example-rxjs-shared-state
