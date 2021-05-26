@@ -62,6 +62,9 @@ npm을 작동하려면 스크립트/lerna.json을 변경해야 할 수 있다.
 ### **구현 모습**
 
 - **로그인 전**
+
+<br>
+
   ![beforelogin](https://user-images.githubusercontent.com/74655724/118486082-26bd2d00-b754-11eb-97df-9f14445be5ce.png)
 
 <br>
